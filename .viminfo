@@ -11,9 +11,9 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
 :q!
 :80
-:wq
 :91
 :88
 :90
@@ -71,18 +71,20 @@ $
 	,
 
 # File marks:
-'0  83  9  ~/LR/distributed_async_LR.py
-'1  63  41  ~/LR/distributed_async_LR.py
-'2  2  10  ~/LR/distributed_async_LR.py
-'3  6  26  ~/LR/run_code_template.sh
-'4  67  17  ~/LR/distributed_async_LR.py
-'5  85  0  ~/LR/distributed_sync_LR.py
-'6  138  1  ~/LR/distributed_sync_LR.py
-'7  122  10  ~/LR/distributed_sync_LR.py
-'8  129  90  ~/LR/distributed_sync_LR.py
-'9  83  0  ~/LR/distributed_sync_LR.py
+'0  124  0  ~/.gitignore
+'1  83  9  ~/LR/distributed_async_LR.py
+'2  63  41  ~/LR/distributed_async_LR.py
+'3  2  10  ~/LR/distributed_async_LR.py
+'4  6  26  ~/LR/run_code_template.sh
+'5  67  17  ~/LR/distributed_async_LR.py
+'6  85  0  ~/LR/distributed_sync_LR.py
+'7  138  1  ~/LR/distributed_sync_LR.py
+'8  122  10  ~/LR/distributed_sync_LR.py
+'9  129  90  ~/LR/distributed_sync_LR.py
 
 # Jumplist (newest first):
+-'  124  0  ~/.gitignore
+-'  1  0  ~/.gitignore
 -'  83  9  ~/LR/distributed_async_LR.py
 -'  1  0  ~/LR/distributed_async_LR.py
 -'  63  41  ~/LR/distributed_async_LR.py
@@ -182,6 +184,12 @@ $
 -'  24  0  ~/code_template.py
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	"	124	0
+	^	124	0
+	.	123	6
+	+	123	6
 
 > ~/LR/distributed_async_LR.py
 	"	83	9
