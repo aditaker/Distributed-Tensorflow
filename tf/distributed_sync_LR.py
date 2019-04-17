@@ -135,4 +135,4 @@ elif FLAGS.job_name == "worker":
 		print('End TIme of training: ', time_end)
 		print('Total time taken: ' , time_end-time_begin)
 		print sess.run(accuracy_f, feed_dict={x: mnist.test.images, y: mnist.test.labels})	
-		#tf.summary.FileWriter('./tensorBoard', sess.graph)	
+		tf.summary.FileWriter('./tensorBoard', sess.graph)	

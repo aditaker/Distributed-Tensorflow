@@ -11,8 +11,9 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
 :q!
+:80
+:wq
 :91
 :88
 :90
@@ -70,23 +71,31 @@ $
 	,
 
 # File marks:
-'0  122  10  ~/LR/distributed_sync_LR.py
-'1  129  90  ~/LR/distributed_sync_LR.py
-'2  83  0  ~/LR/distributed_sync_LR.py
-'3  138  2  ~/LR/distributed_sync_LR.py
-'4  92  24  ~/LR/distributed_sync_LR.py
-'5  109  72  ~/LR/distributed_sync_LR.py
-'6  121  30  ~/LR/distributed_sync_LR.py
-'7  91  23  ~/LR/distributed_sync_LR.py
-'8  120  13  ~/LR/distributed_sync_LR.py
-'9  77  2  ~/LR/distributed_sync_LR.py
+'0  83  9  ~/LR/distributed_async_LR.py
+'1  63  41  ~/LR/distributed_async_LR.py
+'2  2  10  ~/LR/distributed_async_LR.py
+'3  6  26  ~/LR/run_code_template.sh
+'4  67  17  ~/LR/distributed_async_LR.py
+'5  85  0  ~/LR/distributed_sync_LR.py
+'6  138  1  ~/LR/distributed_sync_LR.py
+'7  122  10  ~/LR/distributed_sync_LR.py
+'8  129  90  ~/LR/distributed_sync_LR.py
+'9  83  0  ~/LR/distributed_sync_LR.py
 
 # Jumplist (newest first):
--'  122  10  ~/LR/distributed_sync_LR.py
+-'  83  9  ~/LR/distributed_async_LR.py
+-'  1  0  ~/LR/distributed_async_LR.py
+-'  63  41  ~/LR/distributed_async_LR.py
+-'  2  10  ~/LR/distributed_async_LR.py
+-'  6  26  ~/LR/run_code_template.sh
+-'  1  0  ~/LR/run_code_template.sh
+-'  67  17  ~/LR/distributed_async_LR.py
+-'  85  0  ~/LR/distributed_sync_LR.py
 -'  1  0  ~/LR/distributed_sync_LR.py
+-'  138  1  ~/LR/distributed_sync_LR.py
+-'  122  10  ~/LR/distributed_sync_LR.py
 -'  129  90  ~/LR/distributed_sync_LR.py
 -'  83  0  ~/LR/distributed_sync_LR.py
--'  138  2  ~/LR/distributed_sync_LR.py
 -'  92  24  ~/LR/distributed_sync_LR.py
 -'  109  72  ~/LR/distributed_sync_LR.py
 -'  121  30  ~/LR/distributed_sync_LR.py
@@ -95,15 +104,11 @@ $
 -'  77  2  ~/LR/distributed_sync_LR.py
 -'  7  91  ~/LR/cluster_utils.sh
 -'  1  0  ~/LR/cluster_utils.sh
--'  6  32  ~/LR/run_code_template.sh
--'  1  0  ~/LR/run_code_template.sh
 -'  128  1  ~/LR/distributed_sync_LR.py
 -'  67  17  ~/LR/temp.py
 -'  1  0  ~/LR/temp.py
 -'  137  20  ~/LR/distributed_sync_LR.py
 -'  133  81  ~/LR/distributed_sync_LR.py
--'  83  0  ~/LR/distributed_async_LR.py
--'  1  0  ~/LR/distributed_async_LR.py
 -'  80  47  ~/LR/distributed_async_LR.py
 -'  125  15  ~/LR/distributed_sync_LR.py
 -'  71  0  ~/LR/distributed_async_LR.py
@@ -175,19 +180,75 @@ $
 -'  1  0  ~/run_code_template.sh
 -'  22  16  ~/code_template.py
 -'  24  0  ~/code_template.py
--'  23  11  ~/code_template.py
--'  27  0  ~/cluster_utils.sh
--'  6  37  ~/run_code_template.sh
--'  7  0  ~/run_code_template.sh
--'  19  17  ~/code_template.py
 
 # History of marks within files (newest to oldest):
 
+> ~/LR/distributed_async_LR.py
+	"	83	9
+	^	63	42
+	.	63	42
+	+	41	35
+	+	36	0
+	+	35	1
+	+	34	2
+	+	33	0
+	+	32	0
+	+	31	0
+	+	30	0
+	+	29	0
+	+	28	0
+	+	27	0
+	+	24	0
+	+	23	24
+	+	54	47
+	+	54	102
+	+	54	102
+	+	54	102
+	+	55	0
+	+	71	22
+	+	54	56
+	+	69	20
+	+	54	35
+	+	78	19
+	+	71	22
+	+	78	0
+	+	54	102
+	+	54	102
+	+	54	121
+	+	83	40
+	+	55	0
+	+	52	0
+	+	53	0
+	+	76	0
+	+	83	1
+	+	82	1
+	+	81	1
+	+	78	0
+	+	77	0
+	+	76	2
+	+	75	1
+	+	72	0
+	+	71	1
+	+	70	1
+	+	69	1
+	+	71	21
+	+	74	1
+	+	78	0
+	+	80	14
+	+	67	17
+	+	2	10
+	+	63	42
+
+> ~/LR/run_code_template.sh
+	"	6	26
+	^	6	27
+	.	6	26
+	+	6	26
+
 > ~/LR/distributed_sync_LR.py
-	"	122	10
-	^	122	11
-	.	74	17
-	+	121	21
+	"	85	0
+	^	138	2
+	.	138	2
 	+	132	3
 	+	130	3
 	+	138	2
@@ -287,18 +348,13 @@ $
 	+	133	3
 	+	129	90
 	+	74	17
+	+	138	2
 
 > ~/LR/cluster_utils.sh
 	"	7	91
 	^	7	92
 	.	7	91
 	+	7	91
-
-> ~/LR/run_code_template.sh
-	"	6	32
-	^	6	33
-	.	6	32
-	+	6	32
 
 > ~/LR/temp.py
 	"	67	17
@@ -308,59 +364,6 @@ $
 	+	34	17
 	+	37	17
 	+	38	17
-
-> ~/LR/distributed_async_LR.py
-	"	83	0
-	^	80	48
-	.	80	14
-	+	41	35
-	+	36	0
-	+	35	1
-	+	34	2
-	+	33	0
-	+	32	0
-	+	31	0
-	+	30	0
-	+	29	0
-	+	28	0
-	+	27	0
-	+	24	0
-	+	23	24
-	+	54	47
-	+	54	102
-	+	54	102
-	+	54	102
-	+	55	0
-	+	71	22
-	+	54	56
-	+	69	20
-	+	54	35
-	+	78	19
-	+	71	22
-	+	78	0
-	+	54	102
-	+	54	102
-	+	54	121
-	+	83	40
-	+	55	0
-	+	52	0
-	+	53	0
-	+	76	0
-	+	83	1
-	+	82	1
-	+	81	1
-	+	78	0
-	+	77	0
-	+	76	2
-	+	75	1
-	+	72	0
-	+	71	1
-	+	70	1
-	+	69	1
-	+	71	21
-	+	74	1
-	+	78	0
-	+	80	14
 
 > ~/AlexNet/AlexNet/scripts/train.py
 	"	44	0

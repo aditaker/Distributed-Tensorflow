@@ -1,0 +1,7 @@
+2019-04-17 02:06:48.822894: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2019-04-17 02:06:48.842460: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194840000 Hz
+2019-04-17 02:06:48.844242: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x4a3e2e0 executing computations on platform Host. Devices:
+2019-04-17 02:06:48.844262: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-04-17 02:06:48.845850: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2222}
+2019-04-17 02:06:48.845863: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job worker -> {0 -> 10.10.1.1:2223, 1 -> 10.10.1.2:2222}
+2019-04-17 02:06:48.848397: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:391] Started server with target: grpc://localhost:2222

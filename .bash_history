@@ -866,3 +866,352 @@ ls
 cd scripts/
 ls
 vi train.py 
+ls
+cd LR/
+ls
+tailf serverlog-0.out 
+tailf serverlog-1.out 
+tailf serverlog-ps-0.out 
+tailf serverlog-0.out 
+tailf serverlog-1.out 
+tailf serverlog-ps-0.out 
+ssh 10.10.1.2
+ls
+cd LR
+ls
+vi distributed_async_LR.py 
+ls
+vi run_code_template.sh 
+ls
+rm serverlog-*
+source cluster_utils.sh 
+terminate_cluster 
+ls
+bash run_code_template.sh 
+lw
+ls
+vi distributed_async_LR.py 
+ls
+vi distributed_sync_LR.py 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-ps-0.out 
+ls
+mkdit async
+mkdir async
+ls
+mv serverlog-* async/
+ls
+terminate_cluster 
+vi run_code_template.sh 
+bash run_code_template.sh 
+ls
+cat serverlog-0.out 
+cat serverlog-1.out 
+ls
+vi distributed_sync_LR.py 
+rm serverlog-*
+ls
+terminate_cluster 
+ls
+vi distributed_sync_LR.py 
+ls
+bash run_code_template.sh 
+cd tensorBoard/
+ls
+cd ..
+ls
+cd async/
+ls
+cat serverlog-0.out 
+cd ..
+ls
+cat serverlog-
+cat serverlog-0.out 
+cat serverlog-1.out 
+vi distributed_sync_LR.py 
+vi distributed_async_LR.py 
+cat serverlog-0.out 
+vi distributed_async_LR.py 
+cat serverlog-0.out 
+cat serverlog-1.out 
+ps
+ps -ef|grep python
+ls
+l
+lls
+ls
+ps -ef|grep python
+cat serverlog-1.out 
+vi distributed_sync_LR.py 
+ls
+rm serverlog-*
+terminate_cluster 
+python distributed_sync_LR.py 
+vi distributed_sync_LR.py 
+ls
+terminate_cluster 
+bash run_code_template.sh 
+ls
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+ls
+rm serverlog-*
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+ls
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+vi temp.py
+vi run_code_template.sh 
+bash run_code_template.sh 
+cat serverlog-0.out 
+cat serverlog-1.out 
+ls
+vi distributed_sync_LR.py 
+rm serverlog-*
+terminate_cluster 
+bash run_code_template.sh 
+ls
+rm serverlog-*
+terminate_cluster 
+ls
+vi run_code_template.sh 
+bash run_code_template.sh 
+cat serverlog-0.out 
+terminate_cluster 
+ls
+rm serverlog-*
+bash run_code_template.sh 
+cat serverlog-0.out 
+ls
+vi cluster_utils.sh 
+source cluster_utils.sh 
+terminate_cluster 
+vi cluster_utils.sh 
+source cluster_utils.sh 
+terminate_cluster 
+ls
+rm serverlog-*
+bash run_code_template.sh 
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+terminate_cluster 
+rm serverlog-*
+ls
+bash run_code_template.sh 
+ls
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+ls
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+ls
+terminate_cluster 
+bash run_code_template.sh 
+ls
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+terminate_cluster 
+rm serverlog-*
+bash run_code_template.sh 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+vi distributed_sync_LR.py 
+cat serverlog-0.out 
+cat serverlog-1.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+ls
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+vi distributed_sync_LR.py 
+rm serverlog-*
+ls
+terminate_cluster 
+ls
+bash run_code_template.sh 
+vi distributed_sync_LR.py
+ls
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+vi distributed_sync_LR.py
+rm serverlog-*
+terminate_cluster 
+bash run_code_template.sh 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+cat serverlog-1.out 
+cat serverlog-0.out 
+diff serverlog-0.out serverlog-1.out 
+vi distributed_sync_LR.py 
+cd ..
+ls
+echo "# Distributed-Tensorflow" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/aditaker/Distributed-Tensorflow.git
+git push -u origin master
+ls
+git status
+git add .
+git commit -m "tf"
+git push origin master
+cd LR
+ls

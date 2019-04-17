@@ -1,0 +1,70 @@
+nohup: ignoring input
+2019-04-17 02:06:48.851279: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2019-04-17 02:06:48.880841: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194840000 Hz
+2019-04-17 02:06:48.884015: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x32ff390 executing computations on platform Host. Devices:
+2019-04-17 02:06:48.884061: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-04-17 02:06:48.886844: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job ps -> {0 -> 10.10.1.1:2222}
+2019-04-17 02:06:48.886869: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2223, 1 -> 10.10.1.2:2222}
+2019-04-17 02:06:48.891586: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:391] Started server with target: grpc://localhost:2223
+WARNING:tensorflow:From distributed_async_LR.py:53: read_data_sets (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:260: maybe_download (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please write your own downloading logic.
+WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:262: extract_images (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:267: extract_labels (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:110: dense_to_one_hot (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.one_hot on tensors.
+WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:290: __init__ (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-04-17 02:06:50.083993: I tensorflow/core/distributed_runtime/master_session.cc:1192] Start master session 9f28da00655237ef with config: 
+2019-04-17 02:07:06.762946: W tensorflow/core/distributed_runtime/master_session.cc:2029] Unavailable: OS Error
+Extracting MNIST_data/train-images-idx3-ubyte.gz
+Extracting MNIST_data/train-labels-idx1-ubyte.gz
+Extracting MNIST_data/t10k-images-idx3-ubyte.gz
+Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
+('Training Data shape :', (55000, 784))
+('Start time of Epoch: ', 0, ' :', 1555484810.102563)
+('Ending time of Epoch: ', 0, ' :', 1555484811.826574)
+('Epoch:', 1, 'cost =', '7.287')
+('Start time of Epoch: ', 1, ' :', 1555484811.826644)
+('Ending time of Epoch: ', 1, ' :', 1555484813.506764)
+('Epoch:', 2, 'cost =', '3.059')
+('Start time of Epoch: ', 2, ' :', 1555484813.506814)
+('Ending time of Epoch: ', 2, ' :', 1555484815.15697)
+('Epoch:', 3, 'cost =', '2.013')
+('Start time of Epoch: ', 3, ' :', 1555484815.157018)
+('Ending time of Epoch: ', 3, ' :', 1555484816.785831)
+('Epoch:', 4, 'cost =', '1.594')
+('Start time of Epoch: ', 4, ' :', 1555484816.785874)
+('Ending time of Epoch: ', 4, ' :', 1555484818.419007)
+('Epoch:', 5, 'cost =', '1.366')
+('Start time of Epoch: ', 5, ' :', 1555484818.419055)
+('Ending time of Epoch: ', 5, ' :', 1555484820.044034)
+('Epoch:', 6, 'cost =', '1.220')
+('Start time of Epoch: ', 6, ' :', 1555484820.044084)
+('Ending time of Epoch: ', 6, ' :', 1555484821.683595)
+('Epoch:', 7, 'cost =', '1.119')
+('Start time of Epoch: ', 7, ' :', 1555484821.683645)
+('Ending time of Epoch: ', 7, ' :', 1555484823.326895)
+('Epoch:', 8, 'cost =', '1.043')
+('Start time of Epoch: ', 8, ' :', 1555484823.326946)
+('Ending time of Epoch: ', 8, ' :', 1555484824.957598)
+('Epoch:', 9, 'cost =', '0.984')
+('Start time of Epoch: ', 9, ' :', 1555484824.957647)
+('Ending time of Epoch: ', 9, ' :', 1555484826.573231)
+('Epoch:', 10, 'cost =', '0.950')
+0.8093

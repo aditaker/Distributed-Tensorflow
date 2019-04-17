@@ -1,5 +1,5 @@
 import tensorflow as tf
-
+import time
 # define the command line flags that can be sent
 tf.app.flags.DEFINE_integer("task_index", 0, "Index of task with in the job.")
 tf.app.flags.DEFINE_string("job_name", "worker", "either worker or ps")
@@ -60,20 +60,24 @@ elif FLAGS.job_name == "worker":
 		prediction  = tf.nn.softmax(tf.matmul(x, w) + b)
 		loss = tf.reduce_mean(-tf.reduce_sum(y*tf.log(prediction), reduction_indices=1)) 
 		optimizer = tf.train.GradientDescentOptimizer
-		optimizer_f = optimizer(learning_rate=0.001).minimize(loss)
+		optimizer_f = optimizer(learning_rate=0.01).minimize(loss)
 		predictions_check = tf.equal(tf.argmax(prediction, 1), tf.argmax(y, 1))
 		accuracy_f = tf.reduce_mean(tf.cast(predictions_check, tf.float32))
 		init = tf.global_variables_initializer()
-		batch_size = 1
+		batch_size = 100
 		n_batches = int(len(mnist.train.labels)/batch_size)
 	sess = tf.Session(target=server.target)
 	sess.run(init)
 	for epoch in range(10):
 		avg_cost = 0
+		t = time.time()
+		print('Start time of Epoch: ',epoch,' :',  t)
 		for batch in range(n_batches):
 			batch_xs, batch_ys = mnist.train.next_batch(batch_size = batch_size)
 			l, _ = sess.run([loss, optimizer_f], feed_dict={x: batch_xs, y: batch_ys})
 			avg_cost += l/n_batches
+		t = time.time()
+		print('Ending time of Epoch: ',epoch,' :',  t)
 		print("Epoch:", (epoch + 1), "cost =", "{:.3f}".format(avg_cost))
 	print sess.run(accuracy_f, feed_dict={x: mnist.test.images, y: mnist.test.labels})	
 	tf.summary.FileWriter('./tensorBoard', sess.graph)
