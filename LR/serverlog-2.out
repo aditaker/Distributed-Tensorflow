@@ -1,11 +1,11 @@
 nohup: ignoring input
-2019-04-17 18:54:02.575697: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
-2019-04-17 18:54:02.595184: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194840000 Hz
-2019-04-17 18:54:02.597001: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x41f1750 executing computations on platform Host. Devices:
-2019-04-17 18:54:02.597021: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
-2019-04-17 18:54:02.598631: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job ps -> {0 -> 10.10.1.1:2222}
-2019-04-17 18:54:02.598646: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2223, 1 -> 10.10.1.2:2222, 2 -> 10.10.1.3:2222}
-2019-04-17 18:54:02.601209: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:391] Started server with target: grpc://localhost:2223
+2019-04-17 18:53:54.767928: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2019-04-17 18:53:54.794621: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194840000 Hz
+2019-04-17 18:53:54.797931: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x34135d0 executing computations on platform Host. Devices:
+2019-04-17 18:53:54.797968: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-04-17 18:53:54.800874: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job ps -> {0 -> 10.10.1.1:2222}
+2019-04-17 18:53:54.800904: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job worker -> {0 -> 10.10.1.1:2223, 1 -> 10.10.1.2:2222, 2 -> localhost:2222}
+2019-04-17 18:53:54.805618: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:391] Started server with target: grpc://localhost:2222
 WARNING:tensorflow:From distributed_async_LR.py:53: read_data_sets (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
 Instructions for updating:
 Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
@@ -30,24 +30,23 @@ Colocations handled automatically by placer.
 WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use tf.cast instead.
-2019-04-17 18:54:03.793942: I tensorflow/core/distributed_runtime/master_session.cc:1192] Start master session 1ce04c70ed99942c with config: 
-2019-04-17 18:54:21.542994: W tensorflow/core/distributed_runtime/master_session.cc:2029] Unavailable: OS Error
+2019-04-17 18:53:56.003117: I tensorflow/core/distributed_runtime/master_session.cc:1192] Start master session fddf7bce0b521875 with config: 
 Extracting MNIST_data/train-images-idx3-ubyte.gz
 Extracting MNIST_data/train-labels-idx1-ubyte.gz
 Extracting MNIST_data/t10k-images-idx3-ubyte.gz
 Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
 ('Training Data shape :', (55000, 784))
-('Start time of Training: ', 1555545243.812633)
-('Device:', '0000', 'Epoch:', '0001', 'cost=', '5.386165321')
-('Device:', '0000', 'Epoch:', '0002', 'cost=', '1.983736348')
-('Device:', '0000', 'Epoch:', '0003', 'cost=', '1.442076817')
-('Device:', '0000', 'Epoch:', '0004', 'cost=', '1.214622733')
-('Device:', '0000', 'Epoch:', '0005', 'cost=', '1.082227113')
-('Device:', '0000', 'Epoch:', '0006', 'cost=', '0.991836426')
-('Device:', '0000', 'Epoch:', '0007', 'cost=', '0.925909835')
-('Device:', '0000', 'Epoch:', '0008', 'cost=', '0.873075552')
-('Device:', '0000', 'Epoch:', '0009', 'cost=', '0.830727432')
-('Device:', '0000', 'Epoch:', '0010', 'cost=', '0.810991705')
-('End time of Training: ', 1555545260.366441)
-('Total time taken: ', 16.553807973861694)
-('Device:', '0000', 'Accuracy:', 0.8334)
+('Start time of Training: ', 1555545236.021568)
+('Device:', '0002', 'Epoch:', '0001', 'cost=', '5.502561720')
+('Device:', '0002', 'Epoch:', '0002', 'cost=', '2.134491395')
+('Device:', '0002', 'Epoch:', '0003', 'cost=', '1.558144583')
+('Device:', '0002', 'Epoch:', '0004', 'cost=', '1.306082576')
+('Device:', '0002', 'Epoch:', '0005', 'cost=', '1.155220592')
+('Device:', '0002', 'Epoch:', '0006', 'cost=', '1.054552225')
+('Device:', '0002', 'Epoch:', '0007', 'cost=', '0.979782796')
+('Device:', '0002', 'Epoch:', '0008', 'cost=', '0.921004973')
+('Device:', '0002', 'Epoch:', '0009', 'cost=', '0.874544291')
+('Device:', '0002', 'Epoch:', '0010', 'cost=', '0.835680456')
+('End time of Training: ', 1555545250.671279)
+('Total time taken: ', 14.649710893630981)
+('Device:', '0002', 'Accuracy:', 0.8324)
