@@ -10,28 +10,28 @@ tf.logging.set_verbosity(tf.logging.DEBUG)
 
 clusterSpec_single = tf.train.ClusterSpec({
     "worker" : [
-        "localhost:10000"
+        "localhost:2222"
     ]
 })
 
 clusterSpec_cluster = tf.train.ClusterSpec({
     "ps" : [
-        "10.10.1.1:10001"
+        "10.10.1.1:2222"
     ],
     "worker" : [
-        "10.10.1.1:10000",
-        "10.10.1.2:10000"
+        "10.10.1.1:2223",
+        "10.10.1.2:2222"
     ]
 })
 
 clusterSpec_cluster2 = tf.train.ClusterSpec({
     "ps" : [
-        "10.10.1.1:10001"
+        "10.10.1.1:2222"
     ],
     "worker" : [
-        "10.10.1.1:10000",
-        "10.10.1.2:10000",
-        "10.10.1.3:10000",
+        "10.10.1.1:2223",
+        "10.10.1.2:2222",
+        "10.10.1.3:2222"
     ]
 })
 

@@ -21,17 +21,17 @@ from ..utils import misc
 net_configs = {
     'single': (attrgetter('original'),
              ['/job:worker/task:0'],
-             'grpc://localhost:10000', 1, 96),
+             'grpc://localhost:2222', 1, 96),
     'cluster': (attrgetter('distribute'),
                   ['/job:worker/task:0', '/job:worker/task:1',
                    '/job:ps/task:0'],
-                  'grpc://localhost:10000',
+                  'grpc://localhost:2222',
                   2, 48),
     'cluster2': (attrgetter('distribute'),
                   ['/job:worker/task:0', '/job:worker/task:1',
                    '/job:worker/task:2',
                    '/job:ps/task:0'],
-                  'grpc://localhost:10000',
+                  'grpc://localhost:2222',
                   3, 32)
 }
 
@@ -124,7 +124,8 @@ def train(net_configname, batch_size, devices=None, target=None,
 
         if devices is None:
             devices = config[1]
-        if target is None:
+        
+	if target is None:
             target = config[2]
         batch_size = config[3] * batch_size
         if batch_num is None:
@@ -150,8 +151,8 @@ def train(net_configname, batch_size, devices=None, target=None,
         # print some information
         for qr in tf.get_collection(tf.GraphKeys.QUEUE_RUNNERS):
             print(qr.name)
-
-        config = tf.ConfigProto(log_device_placement=False, allow_soft_placement=True)
+	print('yolooooooo')
+        config = tf.ConfigProto(log_device_placement=True, allow_soft_placement=True)
         with tf.Session(target, config=config) as sess:
             sess.run(tfhelper.initialize_op())
             coord = tf.train.Coordinator()
