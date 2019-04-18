@@ -123,13 +123,12 @@ def distribute(images, labels, num_classes, total_num_examples, devices, is_trai
     
     gradients = []
     with tf.variable_scope("model") as model_scope:
-	with tf.name_scope("reuse"):
 	    for i in range(n_workers):
 		worker_device = devices[i] 
-		with tf.name_scope('W-{}'.format(i)):
-	       	    net, logits, total_loss = alexnet_inference(builder, worker_data[i], worker_labels[i], num_classes)
+		with tf.device(worker_device):
+		    net, logits, total_loss = alexnet_inference(builder, worker_data[i], worker_labels[i], num_classes)
 		    worker_grad = optimizer.compute_gradients(total_loss)
-		gradients.append(worker_grad)
+		    gradients.append(worker_grad)
 		model_scope.reuse_variables()
 		    
     with tf.device(builder.variable_device()):

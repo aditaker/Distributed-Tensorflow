@@ -151,8 +151,8 @@ def train(net_configname, batch_size, devices=None, target=None,
         # print some information
         for qr in tf.get_collection(tf.GraphKeys.QUEUE_RUNNERS):
             print(qr.name)
-	print('yolooooooo')
-        config = tf.ConfigProto(log_device_placement=True, allow_soft_placement=True)
+        
+	config = tf.ConfigProto(log_device_placement=True, allow_soft_placement=True)
         with tf.Session(target, config=config) as sess:
             sess.run(tfhelper.initialize_op())
             coord = tf.train.Coordinator()
