@@ -1,12 +1,12 @@
 nohup: ignoring input
-2019-04-17 18:54:02.575697: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
-2019-04-17 18:54:02.595184: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194840000 Hz
-2019-04-17 18:54:02.597001: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x41f1750 executing computations on platform Host. Devices:
-2019-04-17 18:54:02.597021: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
-2019-04-17 18:54:02.598631: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job ps -> {0 -> 10.10.1.1:2222}
-2019-04-17 18:54:02.598646: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2223, 1 -> 10.10.1.2:2222, 2 -> 10.10.1.3:2222}
-2019-04-17 18:54:02.601209: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:391] Started server with target: grpc://localhost:2223
-WARNING:tensorflow:From distributed_async_LR.py:53: read_data_sets (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+2019-04-18 18:36:01.451299: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2019-04-18 18:36:01.458377: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194840000 Hz
+2019-04-18 18:36:01.460201: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5222f70 executing computations on platform Host. Devices:
+2019-04-18 18:36:01.460222: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-04-18 18:36:01.461917: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job ps -> {0 -> 10.10.1.1:3000}
+2019-04-18 18:36:01.461931: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:252] Initialize GrpcChannelCache for job worker -> {0 -> localhost:3001, 1 -> 10.10.1.2:3000}
+2019-04-18 18:36:01.464508: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:391] Started server with target: grpc://localhost:3001
+WARNING:tensorflow:From distributed_sync_LR.py:59: read_data_sets (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
 Instructions for updating:
 Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
 WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py:260: maybe_download (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
@@ -27,27 +27,35 @@ Please use alternatives such as official/mnist/dataset.py from tensorflow/models
 WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Colocations handled automatically by placer.
+WARNING:tensorflow:From distributed_sync_LR.py:78: __init__ (from tensorflow.python.training.sync_replicas_optimizer) is deprecated and will be removed in a future version.
+Instructions for updating:
+The `SyncReplicaOptimizer` class is deprecated. For synchrononous training, please use [Distribution Strategies](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/distribute).
+INFO:tensorflow:SyncReplicasV2: replicas_to_aggregate=2; total_num_replicas=2
 WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use tf.cast instead.
-2019-04-17 18:54:03.793942: I tensorflow/core/distributed_runtime/master_session.cc:1192] Start master session 1ce04c70ed99942c with config: 
-2019-04-17 18:54:21.542994: W tensorflow/core/distributed_runtime/master_session.cc:2029] Unavailable: OS Error
+WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/python/ops/data_flow_ops.py:1294: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/lib/python2.7/dist-packages/tensorflow/python/training/sync_replicas_optimizer.py:352: __init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From distributed_sync_LR.py:106: __init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2019-04-18 18:36:02.367964: I tensorflow/core/distributed_runtime/master_session.cc:1192] Start master session 80adb2e73c52478e with config: allow_soft_placement: true
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Starting standard services.
+WARNING:tensorflow:Standard services need a 'logdir' passed to the SessionManager
+INFO:tensorflow:Starting queue runners.
 Extracting MNIST_data/train-images-idx3-ubyte.gz
 Extracting MNIST_data/train-labels-idx1-ubyte.gz
 Extracting MNIST_data/t10k-images-idx3-ubyte.gz
 Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
-('Training Data shape :', (55000, 784))
-('Start time of Training: ', 1555545243.812633)
-('Device:', '0000', 'Epoch:', '0001', 'cost=', '5.386165321')
-('Device:', '0000', 'Epoch:', '0002', 'cost=', '1.983736348')
-('Device:', '0000', 'Epoch:', '0003', 'cost=', '1.442076817')
-('Device:', '0000', 'Epoch:', '0004', 'cost=', '1.214622733')
-('Device:', '0000', 'Epoch:', '0005', 'cost=', '1.082227113')
-('Device:', '0000', 'Epoch:', '0006', 'cost=', '0.991836426')
-('Device:', '0000', 'Epoch:', '0007', 'cost=', '0.925909835')
-('Device:', '0000', 'Epoch:', '0008', 'cost=', '0.873075552')
-('Device:', '0000', 'Epoch:', '0009', 'cost=', '0.830727432')
-('Device:', '0000', 'Epoch:', '0010', 'cost=', '0.810991705')
-('End time of Training: ', 1555545260.366441)
-('Total time taken: ', 16.553807973861694)
-('Device:', '0000', 'Accuracy:', 0.8334)
+Worker 0: Initializing session...
+Worker 0: Session initialization complete.
+('Start time of Training: ', 1555630562.460693)
+('End time of training: ', 1555630582.2368)
+('Total time taken: ', 19.7761070728302)
+('Device:', '0000', 'Accuracy:', 0.7507)

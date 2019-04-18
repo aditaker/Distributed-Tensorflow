@@ -11,28 +11,28 @@ tf.logging.set_verbosity(tf.logging.DEBUG)
 
 clusterSpec_single = tf.train.ClusterSpec({
     "worker" : [
-        "localhost:2222"
+        "localhost:3000"
     ]
 })
 
 clusterSpec_cluster = tf.train.ClusterSpec({
     "ps" : [
-        "10.10.1.1:2222"
+        "10.10.1.1:3000"
     ],
     "worker" : [
-	"10.10.1.1:2223",
-        "10.10.1.2:2222"
+	"10.10.1.1:3001",
+        "10.10.1.2:3000"
     ]
 })
 
 clusterSpec_cluster2 = tf.train.ClusterSpec({
     "ps" : [
-        "10.10.1.1:2222"
+        "10.10.1.1:3000"
     ],
     "worker" : [
-        "10.10.1.1:2223",
-        "10.10.1.2:2222",
-        "10.10.1.3:2222",
+        "10.10.1.1:3001",
+        "10.10.1.2:3000",
+        "10.10.1.3:3000",
     ]
 })
 
@@ -144,4 +144,4 @@ elif FLAGS.job_name == "worker":
 	#print sess.run(accuracy_f, feed_dict={x: mnist.test.images, y: mnist.test.labels})	
 	with sess.as_default():
 		print("Device:", '%04d' % FLAGS.task_index, "Accuracy:", accuracy_f.eval({x: mnist.test.images, y: mnist.test.labels}))
-	#tf.summary.FileWriter('./tensorBoard', sess.graph)	
+	tf.summary.FileWriter('./tensorBoard', sess.graph)	
